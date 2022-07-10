@@ -1,0 +1,231 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cursor-pointer {
+cursor: pointer;
+}
+
+.mainpage{
+    max-width: 1050px;
+    margin: auto;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left{
+    border-radius: 20px;
+    font-size: 12px;
+    display: flex;
+}
+
+.header-top-left-words{
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.header-top-right{
+    display: flex;
+    text-align: right;
+    font-size: 12px;
+}
+
+.header-top-right-signup{
+    padding-left: 7px;
+    padding-right: 10px;
+    padding-top: 4px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.header-top-right-login{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.header-top-right-center{
+    padding-left: 10px;
+    padding-right: 7px;
+    padding-top: 4px;
+}
+
+.header-top-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-middle{
+    text-align: center;
+}
+
+.marketkurly-logo{
+    width: 110px;
+    height: 75px;
+}
+
+.menubar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 20px;
+    height: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.menu-category{
+    display: flex !important;
+}
+
+.menu-category:hover{
+    color:purple;
+}
+
+.menu-underline:hover{
+    color:purple;
+    text-decoration: underline;
+}
+
+.search{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.searchbar{
+    display: flex;
+    position: relative;
+    width: 180px;
+}
+
+.searchbar-input{
+    width: 100%;
+    border-radius: 30px;
+    border: gray;
+}
+
+.search-img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-img{
+    width: 30px;
+    height: 30px;
+}
+
+.location{
+    padding-top: 10px;
+}
+
+.like{
+    padding-top: 10px;
+}
+
+.bucket{
+    padding-top: 10px;
+}
+
+.main1-img{
+    width: 100%;
+    height: 300px;
+}
+
+.main2{
+    margin-top: 80px;
+}
+
+.items-words{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.item-subwords{
+    font-size: 15px;
+    color: gray;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro{
+    overflow: hidden;
+}
+
+.intro-img{
+    width: 250px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.intro-img:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+.main2-img{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 1050px;
+    height: 140px;
+}
+
+.intro2-img:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+.intro2{
+    display: flex;
+    justify-content:space-between;
+}
+
+.main2-2-img{
+    margin-bottom: 0px !important;
+}
+
+.intro2-img{
+    width: 700px;
+    height: 350px;
+}
+
+.main2-3-img{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    border-top: 1px solid #d3d3d3;
+    background-color: #f9f6f5;
+    position: relative;
+}
+
+.footer-words{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
