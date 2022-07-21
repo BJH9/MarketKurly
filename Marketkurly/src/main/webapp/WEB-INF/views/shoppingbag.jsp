@@ -39,7 +39,6 @@
                     		<th>이름</th>
                     		<th>가격</th>
                     		<th>내용</th>
-                    		<th>수정</th>
                     		<th>삭제</th>
                     		</tr>
                     		
@@ -49,7 +48,6 @@
                     			<td>${b.itemName}</td>
                     			<td>${b.price}</td>
                     			<td>${b.content}</td>
-                    			<td><a href="edit/${id}">수정</a></td>
                     			<td><a href="delete/${id}">삭제</a></td>
                     		</tr>
                     		</c:forEach>
