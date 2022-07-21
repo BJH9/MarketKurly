@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="MarkeyKurly.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/MarkeyKurly.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
     <div class="shoppingbag">
-        <jsp:include page="header.html"></jsp:include>
+        <jsp:include page="header.jsp"></jsp:include>
         <div class="menubar-bottom">
             <p></p>
         </div>
@@ -43,6 +43,17 @@
                     		<th>삭제</th>
                     		</tr>
                     		
+                    	
+                    		<c:forEach var="b" items="${list}">
+                    		<tr>
+                    			<td>${b.itemName}</td>
+                    			<td>${b.price}</td>
+                    			<td>${b.content}</td>
+                    			<td><a href="edit/${id}">수정</a></td>
+                    			<td><a href="delete/${id}">삭제</a></td>
+                    		</tr>
+                    		</c:forEach>
+                
                     	</table>
                     </div>
                     <div class="mybag-down">
@@ -70,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <jsp:include page="footer.html"></jsp:include>
+        <jsp:include page="footer.jsp"></jsp:include>
     </div>
 </body>
 </html>

@@ -31,7 +31,7 @@ public class BagDao {
 	String sql="select * from BJH_bag where id=?";
 	return template.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper<Bag>(Bag.class));
 	}
-	public List<Bag> getEmployees(){
+	public List<Bag> getList(){
 	return template.query("select * from BJH_bag",new RowMapper<Bag>(){
 	public Bag mapRow(ResultSet rs, int row) throws SQLException {
 	Bag e=new Bag();

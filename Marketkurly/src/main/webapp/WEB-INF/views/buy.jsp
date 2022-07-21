@@ -3,22 +3,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="MarkeyKurly.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/MarkeyKurly.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <jsp:include page="header.html"></jsp:include>
+    <jsp:include page="header.jsp"></jsp:include>
     <div class="menubar-bottom">
         <p></p>
     </div>
-    <form action="addToBag.jsp" method="post">
+    <form action="addtobag" method="post">
     <div class="buy">
         <div class="buy-up">
             <div class="buy-up-left">
-                <img class="buy-item1" src="item1.jpg" alt="item1">
+                <img class="buy-item1" src="${pageContext.request.contextPath}/resources/item1.jpg" alt="item1">
             </div>
             <div class="buy-up-right">
             	<h2><input type="hidden" name="itemName" value="[Sabini] white truffle olive oil 250ml">[사비니] 화이트 트러플 올리브 오일 250ml </input></h2>
@@ -36,6 +36,6 @@
         </div>
     </div>
     </form>
-    <jsp:include page="footer.html"></jsp:include>
+    <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
