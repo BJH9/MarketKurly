@@ -16,11 +16,11 @@ public class BagDao {
 	this.template = template;
 	}
 	public int save(Bag p){
-	String sql="insert into BJH_bag(itemName,price,content) values('"+p.getItemName()+"',"+p.getPrice()+",'"+p.getContent()+"')";
+	String sql="insert into BJH_bag(itemName,price,content) values('"+p.getItemName()+"','"+p.getPrice()+"','"+p.getContent()+"')";
 	return template.update(sql);
 	}
 	public int update(Bag p){
-	String sql="update BJH_bag set itemname='"+p.getItemName()+"', price="+p.getPrice()+",content='"+p.getContent()+"' where id="+p.getId()+"";
+	String sql="update BJH_bag set itemname='"+p.getItemName()+"', price='"+p.getPrice()+"',content='"+p.getContent()+"' where id="+p.getId()+"";
 	return template.update(sql);
 	}
 	public int delete(int id){

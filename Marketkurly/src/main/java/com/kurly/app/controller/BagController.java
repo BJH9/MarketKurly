@@ -5,19 +5,24 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.kurly.app.beans.Bag;
+import com.kurly.app.beans.Item;
 import com.kurly.app.dao.BagDao;
+import com.kurly.app.dao.ItemDao;
 
 @Controller
 public class BagController {
 	
 	@Autowired
 	BagDao dao;
+	
+	@Autowired
+	ItemDao itemDao;
 	
 	@RequestMapping("/")
 	public String home() {
@@ -64,9 +69,23 @@ public class BagController {
 		return "buy5";
 	}
 	
+	
+//	@RequestMapping(value="/addtobag",method=RequestMethod.POST)
+//	public String addtobag(@ModelAttribute("bag") Bag bag) {
+//		dao.save(bag);
+//		return "redirect:/shoppingbag";
+//	}
+	
+	
 	@RequestMapping(value="/addtobag",method=RequestMethod.POST)
-	public String addtobag(@ModelAttribute("bag") Bag bag) {
-		dao.save(bag);
+	public String addtobag(@RequestParam int itemID) {
+		Item newItem = itemDao.getItemById(itemID);
+		Bag newBag = new Bag();
+		newBag.setItemName(newItem.getItemName());
+		newBag.setPrice(newItem.getPrice());
+		newBag.setContent(newItem.getContent());
+		dao.save(newBag);
+		
 		return "redirect:/shoppingbag";
 	}
 	

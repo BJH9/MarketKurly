@@ -48,7 +48,7 @@
                     			<td>${b.itemName}</td>
                     			<td>${b.price}</td>
                     			<td>${b.content}</td>
-                    			<td><a href="delete/${id}">삭제</a></td>
+                    			<td><a href="delete/${b.id}">삭제</a></td>
                     		</tr>
                     		</c:forEach>
                 

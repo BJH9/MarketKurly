@@ -21,10 +21,11 @@
                 <img class="buy-item1" src="${pageContext.request.contextPath}/resources/item4.jpg" alt="item4">
             </div>
             <div class="buy-up-right">
-            	<h2><input type="hidden" name="itemName" value="[KF 365] 아보카도 200g (1개)">[올리] 유기농 현미 크런치볼 미니 (국내산)</input></h2>
-                <h4 style="color:#d3d3d3"><input type="hidden" name="content" value="good taste">맛있어요</input></h4>
+            	<input type="hidden" name="itemID" value="4"></input>
+            	<h2>[올리] 유기농 현미 크런치볼 미니 (국내산)</h2>
+                <h4 style="color:#d3d3d3">맛있어요</h4>
                 <p>회원할인가</p>
-                <h3 style="display:inline"><input type="hidden" name="price" value="69,369won">5,850원</input></h3> <h3 style="display:inline; color: orange;">4%</h3><br><br>
+                <h3 style="display:inline">5,850원</h3> <h3 style="display:inline; color: orange;">4%</h3><br><br>
                 <strike style="color:#d3d3d3">6,500원</strike>
                 <p style="color:purple">로그인 후, 회원가와 할인혜택이 제공됩니다.</p>
             </div>

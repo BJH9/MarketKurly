@@ -21,10 +21,11 @@
                 <img class="buy-item1" src="${pageContext.request.contextPath}/resources/item2.jpg" alt="item2">
             </div>
             <div class="buy-up-right">
-            	<h2><input type="hidden" name="itemName" value="[콜린스 그린] 밀싹주스 350ml">[하림] The미식 유니짜장</input></h2>
-                <h4 style="color:#d3d3d3"><input type="hidden" name="content" value="good taste">맛있어요</input></h4>
+            	<input type="hidden" name="itemID" value="2"></input>
+            	<h2>[하림] The미식 유니짜장</h2><!-- [콜린스 그린] 밀싹주스 350ml -->
+                <h4 style="color:#d3d3d3">맛있어요</h4>
                 <p>회원할인가</p>
-                <h3 style="display:inline"><input type="hidden" name="price" value="69,369won">6,960원</input></h3> <h3 style="display:inline; color: orange;">4%</h3><br><br>
+                <h3 style="display:inline">6,960원</h3> <h3 style="display:inline; color: orange;">4%</h3><br><br>
                 <strike style="color:#d3d3d3">8,700원</strike>
                 <p style="color:purple">로그인 후, 회원가와 할인혜택이 제공됩니다.</p>
             </div>
