@@ -142,7 +142,7 @@
                 </div>
                 <div class="items2 items">
                     <div class="intro3-1 intro">
-                        <a href="#">
+                        <a href="buy2">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item2.jpg" alt="item2">
                             </div>
@@ -153,7 +153,7 @@
                         <br><strike style="color:gray">8700원</strike>
                     </div>
                     <div class="intro3-1 intro">
-                        <a href="#">
+                        <a href="buy2">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item2.jpg" alt="item2">
                             </div>
@@ -164,7 +164,7 @@
                         <br><strike style="color:gray">8700원</strike>
                     </div>
                     <div class="intro3-1 intro">
-                        <a href="#">
+                        <a href="buy2">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item2.jpg" alt="item2">
                             </div>
@@ -175,7 +175,7 @@
                         <br><strike style="color:gray">8700원</strike>
                     </div>
                     <div class="intro3-1 intro">
-                        <a href="#">
+                        <a href="buy2">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item2.jpg" alt="item2">
                             </div>
@@ -192,7 +192,7 @@
                 </div>
                 <div class="items3 items">
                     <div class="intro4-1 intro">
-                        <a href="#">
+                        <a href="buy3">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item3.jpg" alt="item3">
                             </div>
@@ -203,7 +203,7 @@
                         <br><strike style="color:gray">2,730원</strike>
                     </div>
                     <div class="intro4-1 intro">
-                        <a href="#">
+                        <a href="buy3">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item3.jpg" alt="item3">
                             </div>
@@ -214,7 +214,7 @@
                         <br><strike style="color:gray">2,730원</strike>
                     </div>
                     <div class="intro4-1 intro">
-                        <a href="#">
+                        <a href="buy3">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item3.jpg" alt="item3">
                             </div>
@@ -225,7 +225,7 @@
                         <br><strike style="color:gray">2,730원</strike>
                     </div>
                     <div class="intro4-1 intro">
-                        <a href="#">
+                        <a href="buy3">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item3.jpg" alt="item3">
                             </div>
@@ -242,7 +242,7 @@
                 </div>
                 <div class="items4 items">
                     <div class="intro5-1 intro">
-                        <a href="#">
+                        <a href="buy4">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item4.jpg" alt="item4">
                             </div>
@@ -253,7 +253,7 @@
                         <br><strike style="color:gray">6,500원</strike>
                     </div>
                     <div class="intro5-1 intro">
-                        <a href="#">
+                        <a href="buy4">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item4.jpg" alt="item4">
                             </div>
@@ -264,7 +264,7 @@
                         <br><strike style="color:gray">6,500원</strike>
                     </div>
                     <div class="intro5-1 intro">
-                        <a href="#">
+                        <a href="buy4">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item4.jpg" alt="item4">
                             </div>
@@ -275,7 +275,7 @@
                         <br><strike style="color:gray">6,500원</strike>
                     </div>
                     <div class="intro5-1 intro">
-                        <a href="#">
+                        <a href="buy4">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item4.jpg" alt="item4">
                             </div>
@@ -295,7 +295,7 @@
                 </div>
                 <div class="items5 items">
                     <div class="intro6-1 intro">
-                        <a href="#">
+                        <a href="buy5">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item5.jpg" alt="item5">
                             </div>
@@ -306,7 +306,7 @@
                         <br><strike style="color:gray">10,980원</strike>
                     </div>
                     <div class="intro6-1 intro">
-                        <a href="#">
+                        <a href="buy5">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item5.jpg" alt="item5">
                             </div>
@@ -317,7 +317,7 @@
                         <br><strike style="color:gray">10,980원</strike>
                     </div>
                     <div class="intro6-1 intro">
-                        <a href="#">
+                        <a href="buy5">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item5.jpg" alt="item5">
                             </div>
@@ -328,7 +328,7 @@
                         <br><strike style="color:gray">10,980원</strike>
                     </div>
                     <div class="intro6-1 intro">
-                        <a href="#">
+                        <a href="buy5">
                             <div class="intro-img-p">
                                 <img class="intro-img" src="${pageContext.request.contextPath}/resources/item5.jpg" alt="item5">
                             </div>
