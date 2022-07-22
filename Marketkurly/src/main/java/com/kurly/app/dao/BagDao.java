@@ -4,17 +4,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import com.kurly.app.beans.Bag;
 
+@Repository
 public class BagDao {
+	
+	@Autowired
 	JdbcTemplate template;
-	public void setTemplate(JdbcTemplate template) {
-	this.template = template;
-	}
+	
 	public int save(Bag p){
 	String sql="insert into BJH_bag(itemName,price,content) values('"+p.getItemName()+"','"+p.getPrice()+"','"+p.getContent()+"')";
 	return template.update(sql);
