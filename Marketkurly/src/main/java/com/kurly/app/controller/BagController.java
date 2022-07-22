@@ -44,6 +44,26 @@ public class BagController {
 		return "buy";
 	}
 	
+	@RequestMapping("/buy2")
+	public String buy2() {
+		return "buy2";
+	}
+	
+	@RequestMapping("/buy3")
+	public String buy3() {
+		return "buy3";
+	}
+	
+	@RequestMapping("/buy4")
+	public String buy4() {
+		return "buy4";
+	}
+	
+	@RequestMapping("/buy5")
+	public String buy5() {
+		return "buy5";
+	}
+	
 	@RequestMapping(value="/addtobag",method=RequestMethod.POST)
 	public String addtobag(@ModelAttribute("bag") Bag bag) {
 		dao.save(bag);
