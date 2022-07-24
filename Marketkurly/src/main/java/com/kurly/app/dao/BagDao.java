@@ -1,13 +1,9 @@
 package com.kurly.app.dao;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.kurly.app.beans.Bag;
@@ -16,34 +12,24 @@ import com.kurly.app.beans.Bag;
 public class BagDao {
 	
 	@Autowired
-	JdbcTemplate template;
+	SqlSession sqlSession;
 	
 	public int save(Bag p){
-	String sql="insert into BJH_bag(itemName,price,content) values('"+p.getItemName()+"','"+p.getPrice()+"','"+p.getContent()+"')";
-	return template.update(sql);
+		int result = sqlSession.insert("Bag.insertBag", p);
+		return result;
 	}
 	public int update(Bag p){
-	String sql="update BJH_bag set itemname='"+p.getItemName()+"', price='"+p.getPrice()+"',content='"+p.getContent()+"' where id="+p.getId()+"";
-	return template.update(sql);
+		int result=sqlSession.update("Bag.updateBag", p);
+		return result;
 	}
 	public int delete(int id){
-	String sql="delete from BJH_bag where id="+id+"";
-	return template.update(sql);
+		int result = sqlSession.delete("Bag.deleteBag", id);
+		return result;
 	}
 	public Bag getEmpById(int id){
-	String sql="select * from BJH_bag where id=?";
-	return template.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper<Bag>(Bag.class));
+		return sqlSession.selectOne("Bag.getBag", id);
 	}
 	public List<Bag> getList(){
-	return template.query("select * from BJH_bag",new RowMapper<Bag>(){
-	public Bag mapRow(ResultSet rs, int row) throws SQLException {
-	Bag e=new Bag();
-	e.setId(rs.getInt(1));
-	e.setItemName(rs.getString(2));
-	e.setPrice(rs.getString(3));
-	e.setContent(rs.getString(4));
-	return e;
-	}
-	});
+		return sqlSession.selectList("Bag.getBagList");
 	}
 }
